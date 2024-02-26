@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\bin\Debug\MagnitObserverPattern.exe.config
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\bin\Debug\MagnitObserverPattern.exe
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\bin\Debug\MagnitObserverPattern.pdb
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.Form1.resources
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.Properties.Resources.resources
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.csproj.GenerateResource.cache
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.exe
+C:\Users\User\source\repos\MagnitObserverPattern\MagnitObserverPattern\obj\Debug\MagnitObserverPattern.pdb
