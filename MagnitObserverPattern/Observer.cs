@@ -13,9 +13,8 @@ namespace MagnitObserverPattern
        
        public PictureBox picture;
        public int MagneticForse;
-       public int Size;
        public abstract void move(Point point);
-       public int Mass;
+     
     }
    public class Magnit
     {
@@ -30,13 +29,13 @@ namespace MagnitObserverPattern
         Graphics gr;
         public List<IMetal> metals = new List<IMetal>();
         public void move(Point point) {
-            for (int i = 0; i<4; i++) {
+            for (int i = 0; i<7; i++) {
                 gr.DrawEllipse(new Pen(Color.WhiteSmoke), this.picture.Location.X + ((this.picture.Width - MagneticRadius) / 2), this.picture.Location.Y + ((this.picture.Height - MagneticRadius) / 2), MagneticRadius, MagneticRadius);
                 MagneticRadius -= 50;
             }
             this.picture.Left = point.X;
             this.picture.Top = point.Y;
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 7; i++)
             {
                 MagneticRadius += 50;
                 gr.DrawEllipse(new Pen(Color.Black), this.picture.Location.X + ((this.picture.Width - MagneticRadius) / 2), this.picture.Location.Y + ((this.picture.Height - MagneticRadius) / 2), MagneticRadius, MagneticRadius);
@@ -45,7 +44,7 @@ namespace MagnitObserverPattern
 
             foreach (IMetal m in metals) {
               if (m.GetType().Name =="Iron" && new Rectangle(this.picture.Location.X + ((this.picture.Width - MagneticRadius) / 2), this.picture.Location.Y + ((this.picture.Height - MagneticRadius) / 2), MagneticRadius, MagneticRadius).Contains(m.picture.Location)) {
-                    m.move(new Point(point.X+ (this.picture.Width / 2), point.Y + (this.picture.Height / 2)));
+                    m.move(new Point(point.X + (this.picture.Width / 2), point.Y + (this.picture.Height / 2)));
               }
             }
         }
@@ -53,11 +52,9 @@ namespace MagnitObserverPattern
 
     public class Iron: IMetal
     {
-       public Iron(PictureBox p) {
+       public Iron(PictureBox p, int MF) {
             picture = p;
-            Mass = picture.Image.Width;
-            MagneticForse = 5;
-        
+            MagneticForse =MF;
         }
         public override void move(Point point) {
             if (this.picture.Right- (this.picture.Width / 2) <= point.X)
@@ -81,11 +78,10 @@ namespace MagnitObserverPattern
     }
     public class NoIron : IMetal
     {
-        public NoIron(PictureBox p)
+        public NoIron(PictureBox p, int MF)
         {
             picture = p;
-            Mass = picture.Image.Width;
-            MagneticForse = 0 ;
+            MagneticForse = MF;
 
         }
         public override void move(Point point)

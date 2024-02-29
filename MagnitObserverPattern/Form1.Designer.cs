@@ -190,11 +190,7 @@ namespace MagnitObserverPattern
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
-            this.pictureBox1.Move += new System.EventHandler(this.pictureBox1_Move);
+            this.pictureBox1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Iron5
             // 
@@ -262,7 +258,7 @@ namespace MagnitObserverPattern
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(961, 12);
+            this.button1.Location = new System.Drawing.Point(1276, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 18;
@@ -274,7 +270,8 @@ namespace MagnitObserverPattern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 673);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1363, 728);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Iron12);
             this.Controls.Add(this.Iron3);
